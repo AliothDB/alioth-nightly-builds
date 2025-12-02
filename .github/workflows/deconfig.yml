@@ -53,7 +53,7 @@ jobs:
           source ../pmbootstrap/helpers/envkernel.sh
           make defconfig sm8250.config
           make savedefconfig
-          cp defconfig ../out/defconfig
+          cp .output/defconfig ../out/defconfig
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
